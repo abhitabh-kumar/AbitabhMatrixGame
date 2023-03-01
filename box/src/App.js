@@ -6,7 +6,7 @@ function App() {
   const [first,setFirst]=useState("");
   const [second,setSecond]=useState("");
   const change=(e)=>{
-    if(e!=first || e!=second){
+    if(e!=first && e!=second){
       setSecond(first);
       setFirst(e);
     }
